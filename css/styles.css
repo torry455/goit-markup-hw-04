@@ -10,7 +10,7 @@
     --c-logo: #4d5ae5;
     --f-family: 'Roboto';
     --f-family-primary: 'Raleway';
- 
+    --c-footer-hover: #31D0AA;
 }
 
 *,
@@ -151,16 +151,18 @@ img {
     line-height: 24px;
     letter-spacing: 0.02em;
     padding: 24px 0;
-    transition: text-decoration 0.3s ease;
 }
 
 .nav-link:hover {
     color: var(--c-hover);
     text-decoration: underline;
+    transition: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .nav-link:focus {
     color: var(--c-hover);
+    transition: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 address {
@@ -238,7 +240,7 @@ address {
 .button-primary {
     position: relative;
     z-index: 3;
-
+    transition: background-color 0.3s ease;
     display: block;
     padding: 16px 32px;
     align-items: center;
@@ -451,23 +453,8 @@ address {
 }
 
 
-.solution-icon-accent {
-    position: relative;
-    background-color: var(--c-logo);
-    border: 1px solid var(--c-logo);
-    border-radius: 50%;
-    max-height: 40px;
-    max-width: 40px;
-    fill: var(--c-logo)
-    color(black)
-}
-.social-accent {
-
-}
-
 .social-icon {
     padding: 0;
-    border-color: ;
 }
 
 /*Our portfolio section*/
@@ -489,6 +476,7 @@ address {
     display: flex;
     flex-wrap: wrap;
     padding: 0;
+    margin: 0;
     justify-content: flex-start;
     text-align: left;
     row-gap: 48px;
@@ -499,13 +487,54 @@ address {
     width: calc((100% - 48px) / 3);
 }
 
+.service-list:hover .service-block {
+    transform: translateY(0);
+}
+
+
+
+
+.portfolio-image {
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio-photo {
+    padding: 0;
+        margin: 0;
+}
+
+.portfolio-overlay {
+    position: absolute;
+    max-width: 360px;
+        inset: 0;
+        padding: 40px 32px 164px;
+        background-color: var(--c-logo);
+        color: var(--c-background);
+        transform: translateY(100%);
+        transition: transform 1s;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.32px;
+}
+
+.portfolio:hover .portfolio-overlay {
+    transform: translateY(0);
+}
+
+
 .service-content {
     padding: 32px 16px;
     max-width: 360px;
-    margin: auto;
-    border: 1px solid var(--c-header);
+    margin: 0;
+    box-shadow:
+    0px 2px 1px 0px rgba(46, 47, 66, 0.08), 
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16), 
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+    border: 1px solid var(--c-background);
     border-top: none;
-    background-color: var(--c-background-light);
 }
 
 .service-title {
@@ -575,6 +604,16 @@ address {
     letter-spacing: 0.02em;
 }
 
+.social-text {
+    color: var(--c-background-light);
+    font-family: inherit;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.32px;
+    padding-bottom: 16px;
+}
 
 .footer-inner-social {
     padding-right: 0;
@@ -586,3 +625,12 @@ justify-content: space-between;
 max-width: ;
 }
 
+.social-icon-list {
+    gap: 16px;
+}
+
+.footer-icon:hover {
+    background-color: var(--c-footer-hover);
+    border: 1px solid var(--c-footer-hover);
+    transition: background-color 0.5s ease, border 0.5s ease;
+}
