@@ -518,6 +518,9 @@ address {
 }
 
 
+.portfolio:hover {
+    transform: translateY(0%);
+}
 
 .portfolio-image {
     position: relative;
