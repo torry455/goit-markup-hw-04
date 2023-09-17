@@ -517,7 +517,7 @@ address {
     transform: translateY(0%);
 }
 
-.portfolio-image {
+.portfolio {
     position: relative;
     overflow: hidden;
 }
@@ -536,8 +536,7 @@ address {
     padding: 40px 32px ;
     background-color: var(--c-logo);
     color: var(--c-background);
-    transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition: transform 1s;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0.02em;
@@ -591,6 +590,7 @@ address {
     align-items: baseline;
     max-width: 592px;
     justify-content: space-between;
+    margin-left: 156px;
 }
 
 .footer-inner-text {
