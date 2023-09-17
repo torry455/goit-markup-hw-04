@@ -636,23 +636,13 @@ address {
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    padding-bottom: 16px;
+    margin-bottom: 16px;
 }
 
 .footer-inner-social {
     padding-right: 0;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    padding-bottom: 16px;
-    color: var(--c-background-light);
-}
+   }
 
-.footer-social {
-display: flex;
-justify-content: space-between;
-}
 
 .footer-icon-list {
     gap: 16px;
