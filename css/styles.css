@@ -648,7 +648,7 @@ address {
 .social-icon-footer {
     width: 40px;
     height: 40px;
-    transition: background-color 0.5s ease, border 0.5s ease;
+    background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-footer {
@@ -659,20 +659,15 @@ address {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: background-color 0.5s ease, border 0.5s ease;
+    background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-footer:hover {
-    background-color: var(--c-footer-hover);
-    border: 1px solid var(--c-footer-hover);
-}
+.social-footer:hover,
 .social-footer:focus {
     background-color: var(--c-footer-hover);
     border: 1px solid var(--c-footer-hover);
-    
 }
 
 .social-accent-footer {
     fill: var(--c-background);
-    background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
