@@ -317,7 +317,7 @@ address {
     max-width: 100%;
     align-items: center;
     justify-content: space-between;
-    text-align: center;
+    text-align: left;
     margin-bottom: 8px;
 }
 
@@ -344,7 +344,7 @@ address {
     display: flex;
     padding: 0;
     gap: 24px;
-
+    
 }
 
 .solution-block {
