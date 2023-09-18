@@ -145,7 +145,7 @@ img {
 
 .nav-link {
     
-    color: var(--c-brand);
+    color: var(--c-hover);
     text-decoration: none;
     list-style: none;
     font-weight: 500;
