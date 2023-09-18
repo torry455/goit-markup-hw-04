@@ -111,6 +111,10 @@ img {
 
 }
 
+.nav-list-item {
+    color: var(--c-hover);
+}
+
 .header-menu {
     display: flex;
     align-items: center;
